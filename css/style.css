@@ -1,0 +1,457 @@
+
+
+/*anaimation slider */
+/*Wrapper*/
+.wrapper {
+    position: relative;
+}
+
+    .wrapper h5 {
+        display: block;
+        font-size: 1em;
+        letter-spacing: 5px;
+        padding: .5em 0;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        width: 28%;
+        text-transform: capitalize;
+        color: #212121;
+    }
+
+    .wrapper .sentence {
+        font-size: 3em;
+        text-transform: capitalize;
+        font-family: 'Cabin Condensed', sans-serif;
+    }
+
+/*Pop Effect*/
+.popEffect {
+    display: inline;
+    text-indent: 8px;
+}
+
+    .popEffect span {
+        animation: pop 10.5s linear infinite 0s;
+        -ms-animation: pop 10.5s linear infinite 0s;
+        -webkit-animation: pop 10.5s linear infinite 0s;
+        color: #212121;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+    }
+       
+
+        .popEffect span:nth-child(2) {
+            animation-delay: 2.5s;
+            -ms-animation-delay: 2.5s;
+            -webkit-animation-delay: 2.5s;
+            color:white;
+        }
+
+        .popEffect span:nth-child(3) {
+            animation-delay: 5s;
+            -ms-animation-delay: 5s;
+            -webkit-animation-delay: 5s;
+            color: white;
+        }
+
+        .popEffect span:nth-child(4) {
+            animation-delay: 7.5s;
+            -ms-animation-delay: 7.5s;
+            -webkit-animation-delay: 7.5s;
+            color: white;
+        }
+
+        .popEffect span:nth-child(5) {
+            animation-delay: 10s;
+            -ms-animation-delay: 10s;
+            -webkit-animation-delay: 10s;
+            color: white;
+        }
+
+        .popEffect span:nth-child(6) {
+            animation-delay: 13s;
+            -ms-animation-delay: 13s;
+            -webkit-animation-delay: 13s;
+            color: white;
+        }
+
+        .popEffect span:nth-child(7) {
+            animation-delay: 18s;
+            -ms-animation-delay: 18s;
+            -webkit-animation-delay: 18s;
+        }
+
+
+/*Pop Effect Animation*/
+@-moz-keyframes pop {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0;
+        -moz-transform: rotate(0deg) scale(0.10) skew(0deg) translate(0px);
+    }
+
+    10% {
+        opacity: 1;
+        -moz-transform: translateY(0px);
+    }
+
+    25% {
+        opacity: 1;
+        -moz-transform: translateY(0px);
+    }
+
+    30% {
+        opacity: 0;
+        -moz-transform: translateY(0px);
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes pop {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0;
+        -webkit-transform: rotate(0deg) scale(0.10) skew(0deg) translate(0px);
+    }
+
+    10% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+
+    25% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+
+    30% {
+        opacity: 0;
+        -webkit-transform: translateY(0px);
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes pop {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0;
+        -ms-transform: rotate(0deg) scale(0.10) skew(0deg) translate(0px);
+    }
+
+    10% {
+        opacity: 1;
+        -ms-transform: translateY(0px);
+    }
+
+    25% {
+        opacity: 1;
+        -ms-transform: translateY(0px);
+    }
+
+    30% {
+        opacity: 0;
+        -ms-transform: translateY(0px);
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/*end here*/
+
+body {
+    background:#ff6a00;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Adobe Caslon Pro';
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Adobe Caslon Pro';
+    border-bottom: 2px solid #ff6a00;
+    border-top: 2px solid #ff6a00;
+}
+
+
+
+.nave-container, li, nav, ul, a {
+   max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+li, nav, ul, a {
+    border-bottom: 2px solid #990b47;
+    border-top: 2px solid #990b47;
+}
+
+
+
+
+
+.column-layout {
+    max-width: 1300px;
+    background-color: #fff;
+    margin: 40px auto 0 auto;
+    line-height: 1.65;
+    padding: 20px 50px;
+    display: flex;
+}
+
+.main-column {
+    flex: 1;
+    order: 1;
+    padding: 4px;
+}
+
+
+.side-bar-one {
+    flex: 1;
+    order: 2;
+    padding: 4px;
+}
+
+
+.side-bar-two {
+    flex: 1;
+    order: 3;
+    padding: 4px;
+}
+
+
+
+    .side-bar-two:hover {
+        color: green;
+        -webkit-transition: 2s;
+        transition: 20s;
+    }
+
+
+/*CHALLENGE 2 CSS */
+
+.call-out-container {
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+    /* display:flex;
+    justify-content:space-between; cut out thess  two make and paste into media query=> responsive /mobiel*/
+}
+
+
+.call-out {
+    padding: 20px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    /*width:30%; remenber this is not flexbox way of doing things instead we can replace it with flex-basis*/
+    flex-basis: 30%;
+    /* margin-right:40px;*/
+}
+
+    .call-out:hover {
+        background-color: #fff;
+        color: navy;
+    }
+
+    .call-out:nth-last-child(1) {background-color:#c0dbe2;}
+.call-out:nth-last-child(2) {background-color:#cdf1c3;}
+.call-out:nth-last-child(3) {background-color: #ccb9da;}
+
+/*MAKE IT MOBIEL / RESPONSIVE VIEW*/
+
+
+@media(min-width:900px){
+    .call-out-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+/*CHALLENGE 3 CSS */
+.fixes-size-container {
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+    background-color: #fff;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+}
+
+.fixed-size {
+    width: 300px;
+    height: 100px;
+    background-color: #990b47;
+    color: #ff6a00;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+    /*justify-content:center;*/
+}
+
+
+    .fixed-size:hover {
+        width: 300px;
+        height: 100px;
+        background-color: #2a2a2a;
+        color: white;
+    }
+
+/*CHALLENGE 4 CSS */
+
+.banner {
+    height: 400px;
+    max-width: 700px;
+    margin: 40px auto 0 auto;
+    background-color: #2a2a2a;
+    display: flex;
+}
+
+.center-me {
+    color: #fff;
+    font-size: 50px;
+    margin: auto;
+}
+
+
+
+
+/*CHALLENGE 5 CSS */
+.equal-height-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.first {
+    background-color: #ccb9da;
+    padding: 20px;
+    flex: 1;
+}
+
+.second {
+    background-color: yellow;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.second-a {
+    background-color: #c0dbe2;
+    flex: 1;
+}
+
+.second-b {
+    background-color: #cdf1c3;
+    flex: 1;
+}
+
+span {
+    color: red;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+    
+}
+
+    span:hover {
+        background-color: #fff;
+        padding: 0.5em .5em;
+        cursor: pointer;
+        border-radius: 100%;
+    }
+
+
+/*BACK TO TOP BUTTON*/
+
+
+#back-to-top {
+    position: fixed;
+    bottom: 3em;
+    right: 3em;
+    background-color: #990b47;
+    color: #313943;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 1em;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 0 2em 0 rgba(0,0, 0, .25);
+    transition: all .3s ease-in-out;
+    display: inline-block;
+    /*opacity:0;*/
+    text-decoration: none;
+    font-size: .75em;
+}
+
+    #back-to-top:hover {
+        background-color: #fff;
+        padding: 1em 2em;
+    }
+
+    #back-to-top.visible {
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

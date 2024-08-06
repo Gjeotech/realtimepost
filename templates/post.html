@@ -1,0 +1,27 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+
+    <title>Flex box</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+</head>
+<body>
+
+      <!-- CHALLENNGE 2-->
+   <CENTER><h2>G-JEO'S BLOG</h2>
+      <a href="/index"  style="text-decoration:none;color:black">Back To Post</a>
+    <div class="call-out-container" style="background-color:#e6ffff;border-radius:10px;width:57%;height:auto;text-align:justify">
+       <div class="call-out-container" style="padding:1px">
+
+             <div class="call-out">
+             <h2>{{posts.title}}</h2>
+             <h2>{{posts.create_at}}</h2>
+             <p>{{posts.body}}</p><hr style="border:10px solid gray">
+             </div>
+
+    </div>
+</CENTER>
+</body>
+</html>
